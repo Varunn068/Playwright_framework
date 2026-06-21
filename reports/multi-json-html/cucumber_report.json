@@ -1,0 +1,131 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-process;successful-checkout",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successful Checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 234594899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1193441799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117849900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287363899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4070449700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User has products in cart",
+            "match": {
+              "location": "tests\\step-definitions\\CheckoutSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2522375399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User completes payment",
+            "match": {
+              "location": "tests\\step-definitions\\CheckoutSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 513035200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Order should be placed successfully",
+            "match": {
+              "location": "tests\\step-definitions\\CheckoutSteps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417789499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34016900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-process",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout Process",
+    "tags": [],
+    "uri": "tests\\features\\Checkout.feature"
+  }
+]
