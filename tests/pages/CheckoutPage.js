@@ -1,7 +1,6 @@
 const {expect} = require('@playwright/test');
 const BasePage = require('./BasePage');
 const config = require("../conf/qa");
-const saveOrderDetails = require('../utils/saveOrderDetails');
 
 class CheckoutPage extends BasePage {
     constructor(page) {
@@ -38,15 +37,12 @@ async fillCheckoutForm(name = config.customer_name, country = config.customer_co
         await this.click(this.purchaseButton);
     }
     async verifyOrderConfirmation() {
-    await this.page.waitForSelector(this.confirmationMessage, { state: 'visible' });
-    const message = await this.page.locator(this.confirmationMessage).textContent();
-    console.log('Order details (raw):', message);
-
-    const order = saveOrderDetails(message);
-    console.log('Order details (JSON):', JSON.stringify(order, null, 2));
-
-    await this.click(this.okbutton);
-}
+       
+          await this.page.waitForSelector(this.confirmationMessage, { state: 'visible' });
+        const message = await this.page.locator(this.confirmationMessage).textContent();
+        console.log('Orderdetails:', message);
+         await this.click(this.okbutton);
+    }
 }
 
 module.exports = CheckoutPage;

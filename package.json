@@ -10,7 +10,7 @@
     "test:checkout": "npx cucumber-js tests/features/Checkout.feature --require tests/step-definitions/**/*.js",
     "test:smoke": "npx cucumber-js tests/features/**/*.feature --require tests/step-definitions/**/*.js --tags \"@smoke\"",
     "report": "node support/multi-html-report.js",
-    "test:report": "node scripts/run-test-report.js"
+    "test:report": "npm test && npm run report"
   },
   "keywords": [],
   "author": "",

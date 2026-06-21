@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "checkout-process;successful-checkout",
+        "id": "shopping-cart;add-product-to-cart",
         "keyword": "Scenario",
         "line": 9,
-        "name": "Successful Checkout",
+        "name": "Add Product To Cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 234594899
+              "duration": 81460199
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1193441799
+              "duration": 4749001200
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117849900
+              "duration": 104126600
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 287363899
+              "duration": 197759699
             }
           },
           {
@@ -66,7 +66,255 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4070449700
+              "duration": 4058033699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is viewing a product",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1742236000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User clicks Add To Cart",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1825449700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Product should be added to cart",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2402361000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 18256700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "shopping-cart;remove-product-from-cart",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Remove Product From Cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 108594600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1969439399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83966200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277575000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4059152000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "Product exists in cart",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3623823000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User removes the product",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2897717999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Cart should be empty",
+            "match": {
+              "location": "tests\\step-definitions\\CartSteps.js:28"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5008680599,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Varun_Folder\\playwright_bdd\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25554599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "shopping-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Shopping Cart",
+    "tags": [],
+    "uri": "tests\\features\\Cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-process;successful-checkout",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Successful Checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104251600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1838578199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61279300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 348663000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4063727200
             }
           },
           {
@@ -79,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2522375399
+              "duration": 2424782800
             }
           },
           {
@@ -92,7 +340,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 513035200
+              "duration": 505396199
             }
           },
           {
@@ -105,7 +353,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 417789499
+              "duration": 363516300
             }
           },
           {
@@ -113,7 +361,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 34016900
+              "duration": 15589399
             }
           }
         ],
@@ -127,5 +375,808 @@
     "name": "Checkout Process",
     "tags": [],
     "uri": "tests\\features\\Checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration;successful-registration-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful registration with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 98589099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the DemoBlaze home page",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1139095000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on \"Sign up\" link",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 269437000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter registration username",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31071700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I enter registration password",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20970200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the \"Sign up\" button",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1037012500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see an alert with message \"Sign up successful.\"",
+            "match": {
+              "location": "tests\\step-definitions\\RegistrationPageSteps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 318400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 20313300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Registration",
+    "tags": [],
+    "uri": "tests\\features\\Registration.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-functionality;search-valid-product",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Search Valid Product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105369800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1261056300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3373096499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be logged in successfully",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "User is on home page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User searches for \"Laptop\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Matching products should be displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58384599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "search-functionality;search-invalid-product",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Search Invalid Product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104971499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1495527000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User logs in with valid credentials",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3359530199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "User should be logged in successfully",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "User is on home page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User searches for \"XYZ123\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "No results message should be displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41789199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Functionality",
+    "tags": [],
+    "uri": "tests\\features\\Search.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-login",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 96002700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1652004500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User enters valid username and password",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87086299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319376900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4072156999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32067600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-validation",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Login Validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 131123500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1312384200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters \"PIA_user01\" and \"12345@qa\"",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 115862799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315938499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4066546500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34834900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-validation",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Login Validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 126933399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1357343900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters \"PIA_user02\" and \"12345@qa\"",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83584999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160262900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4060168200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24084000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-validation",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Login Validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 147749000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1296052400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters \"PIA_user03\" and \"12345@qa\"",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83066000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 301688099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4067486999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44892799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-validation",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Login Validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 167240799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2193902199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User enters \"PIA_user04\" and \"12345@qa\"",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77390799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276380799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Login result should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4092241200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47059800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;negative-validations",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Negative Validations",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 120533999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "User is on login page",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1304485300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User enters \"PIA_user01\" and \"wrongpass\"",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88671999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User clicks Login button",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287407399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "tests\\step-definitions\\loginSteps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 748497000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12161800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
   }
 ]
